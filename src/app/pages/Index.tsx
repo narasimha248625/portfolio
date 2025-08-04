@@ -1,14 +1,13 @@
-"use client";
-
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Home, User, Briefcase, Code, Mail } from "lucide-react";
-import HomePage from "./components/HomePage";
-import AboutPage from "./components/AboutPage";
-import PortfolioPage from "./components/PortfolioPage";
-import ServicesPage from "./components/ServicesPage";
-import ContactPage from "./components/ContactPage";
+import HomePage from "../components/HomePage";
+import AboutPage from "../components/AboutPage";
+import PortfolioPage from "../components/PortfolioPage";
+import ServicesPage from "../components/ServicesPage";
+import ContactPage from "../components/ContactPage";
 
-const Page = () => {
+const Index = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState("home");
   
@@ -138,4 +137,4 @@ const Page = () => {
   );
 };
 
-export default Page; 
+export default Index;
